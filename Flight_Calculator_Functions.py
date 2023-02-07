@@ -1,7 +1,5 @@
 import math
 
-#STD calculator (speed, time, distance)
-
 def tod():
     #Top of Decent Calculator
     current_altitude_input = int(input('Current Altitude '))
@@ -56,19 +54,19 @@ def altitude_density():
     current_density_altitude = float(current_pressure_altitude + (120 * (current_oat_celsius_input - current_isa_temp_deviation)))
     print(str(current_density_altitude) + " Feet")
 
-def distance():
+def std_distance():
     speed_input = int(input('Speed '))
     time_input = int(input('Time '))
     distance_answer = speed_input * time_input
     print(str(distance_answer) + " Units")
 
-def speed():
+def std_speed():
     distance_input = int(input('Distance '))
     time_input = int(input('Time '))
     speed_answer = distance_input / time_input
     print(str(speed_answer) + " Units")
 
-def time():
+def std_time():
     distance_input = int(input('Distance '))
     speed_input = int(input('Speed '))
     time_answer = distance_input / speed_input

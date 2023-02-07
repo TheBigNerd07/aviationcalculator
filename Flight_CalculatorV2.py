@@ -22,11 +22,11 @@ def menu():
 def conversions():
     print("Choose an option, Temperature, Speed, or Distance")
     userInput = input()
-    if userInput == "Temperature" or "Temp":
-        temperature()
+    if userInput == "Temperature":
+        conv_temperature()
         menu()
     elif userInput == "Speed":
-        speed()
+        conv_speed()
         menu()
     elif userInput == "Distance":
         conv_distance()
@@ -34,7 +34,7 @@ def conversions():
     else:
         print("Please enter a valid option.")
 
-def temperature():
+def conv_temperature():
     print("Choose an option, Fahrenheit to Celsius or Celsius to Fahrenheit")
     userInput = input()
     if userInput == "Fahrenheit to Celsius":
@@ -46,7 +46,7 @@ def temperature():
     else:
         print("Please enter a valid option.")
 
-def speed():
+def conv_speed():
     print("Choose an option, Knots to MPH or MPH to Knots")
     userInput = input()
     if userInput == "Knots to MPH":
@@ -86,13 +86,13 @@ def STD():
     print("Choose an option, Speed, Time, or Distance")
     userInput = input()
     if userInput == "Speed":
-        speed()
+        std_speed()
         menu()
     elif userInput == "Time":
-        time()
+        std_time()
         menu()
     elif userInput == "Distance":
-        distance()
+        std_distance()
         menu()
     else:
         print("Please enter a valid option.")
